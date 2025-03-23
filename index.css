@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+
+.entete{background-color: black;
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 15px 50px; 
+        box-shadow: 0 1px 2px #81c784;
+        top:0; z-index: 1000; width: 100%;}
+
+.nom_complet{color: white; font-size: 30px;}
+.lovitz{color: #81c784;}
+
+.navigation{color: white;padding-right: 80px;}
+.liste_nav{display: flex;gap: 25px; transition: all 0.3s ease;}
+
+.li0{list-style-type:none ; text-decoration: none;}
+.li1{list-style-type:none ; text-decoration: none;}
+.li2{list-style-type:none ; text-decoration: none;}
+.li3{list-style-type:none ; text-decoration: none;}
+.li4{list-style-type:none ; text-decoration: none;}
+
+li:hover{transform:scale(1.05); background-color: rgb(27, 245, 11);border-radius: 10px; padding: 5px 10px; transition: background-color 0.3s ease;}
+a{color: white; text-decoration: none;}
+
+.sector1{
+    background-color: aliceblue; display: flex; justify-content: space-between; align-items: center; margin-top:0px;
+}
+.part1{margin: 0%; padding: 0%; display: flex; text-align: center; gap: 5%;}
+.main1{font-family: sans-serif; font-size: 30px; margin: 20px;}
+#main2a{font-family: sans-serif; font-size: 20px; margin: 20px;}
+.main3 img{ width:500px; margin: 20px;}
+.main3{text-align: center; padding-top: 20px;}
+
+.content_sector2{display: flex; padding-left: 40px;gap: 150px;}
+.titresector2{text-align: center; font-size: 30px; color: aqua;margin: 20px; font-family: normal;}
+.content4sector2{text-align:left; padding: 23px;}
+#spacetext{font-size: 25px; margin-left: 20px; line-height: 50px; width: 70%;}
+
+.bouttoncv{font-size: 20px; text-align: center;}
+.image_page2 img{height: 300px; width: auto; border: solid; border-radius: 200px;border-color: #81c784; margin-right: 100px; padding-top: 100px;}
+
+
+#projet_id{background-color: dimgray; min-height: 350px; padding-bottom: 20px;}
+.MyProject{text-align: center;font-size: 30px; color: aqua; margin: 45px; height: 50px; padding-top: 30px; font-family: normal;}
+.box1, .box2, .box3{border-radius: 10px; 
+        box-shadow: 0 3px 5px rgba(0,0,0,0.1); 
+        background-color: rgb(253, 254, 255); 
+        width: 300px; 
+        height: 190px;}
+
+#box1a, #box2a, #box3a{padding-bottom: 15px; padding-top: 20px;}
+#box1b, #box2b, #box3b{padding-bottom: 5px;}
+
+
+
+.projet_part{display: flex; gap: 150px; margin:0px; text-align: center; justify-content: center;}
+
+
+#competence_id{background-color: rgb(201, 228, 229); min-height: 350px;}
+#title_competence{text-align: center; font-family: normal; font-size: 30px; padding-top: 30px;}
+.blocCompetence{display: flex; gap: 300px; justify-content: center; padding-top: 30px; padding-bottom: 30px;}
+.blocSoftSkills, .blocHardSkills{background-color: aliceblue; 
+                                    border-radius: 10px; 
+                                    box-shadow: 0 3px 5px rgba(0,0,0,0.1); 
+                                    width: 400px;
+                                    height: 190px;}
+#blocSoftSkills, #blocHardSkills{margin-left: 20px; padding-top: 10px;}
+
+
+
+.soft_skills{text-align: center; padding-bottom: 4px;}
+.hard_skills{text-align: center; padding-bottom: 4px;}
+.progressGP, .progressRP, .progressA, .progressHTML, .progressCSS, .progressJava, .progressVS{width: 150%;
+    max-width: 300px;
+    height: 7px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;}
+#progressGP_id{ width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, #026b05, #81c784);
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;}
+#progressRP_id{ width: 85%;
+    height: 100%;
+    background: linear-gradient(to right, #026b05, #81c784);
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;}
+#progressA_id{ width: 95%; 
+    height: 100%;
+    background: linear-gradient(to right, #026b05, #81c784);
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;}
+#progressHTML_id{ width: 60%; 
+    height: 100%;
+    background: linear-gradient(to right, #026b05, #81c784);
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;}
+#progressCSS_id{ width: 50%; 
+    height: 100%;
+    background: linear-gradient(to right, #026b05, #81c784);
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;}
+#progressJava_id{ width: 40%;
+    height: 100%;
+    background: linear-gradient(to right, #026b05, #81c784);
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;}
+#progressVS_id{ width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, #026b05, #81c784);
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;}
+
+
+#formulaire_id {background-color: rgb(35, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+
+
+.contact{font-family: normal; font-size: 30px; padding-top: 20px;color: white; line-height: 25px; text-align: center;}
+.br{font-size: 23px;}
+.grasColor, .grasColor2{color: aqua;}
+label{font-size: smaller; color: rgb(255, 255, 255); display:block} 
+input{font-size: smaller; color: rgb(6, 6, 6); display:block}
+input{border-radius: 5px; border: 1px solid; height: 20px;}
+
+
+.form {
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    align-items:normal;
+    justify-content: center;
+    padding-top: 20px;
+    width: 120%;
+    
+}
+
+
+.descript1{justify-content: center; align-items: center; padding-top: 10px; text-align: center;}
+.subject1{text-align: left;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding-top: 10px;
+}
+
+
+textarea{border-radius: 6px; height: 150px; width: 26%;}
+
+#subject, textarea {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+.soumission button{font-size: 15px; width: 150px; height: 40px;}
+.soumission {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.pied{display: flex; gap: 900px; font-size: smaller; height: 35px auto; margin: 15px auto; justify-content: center;}
+.pied strong{color: rgb(2, 134, 37);}
+
+
+
+button{
+    background-color: aqua;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: rgb(70, 233, 20);
+}
+
+
+
+/* ----Espace Media queries---- */
+
+/* Pour les tablettes et mobiles */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .liste_nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .liste_nav li {
+        margin-bottom: 10px;
+    }
+
+    /* Section principale */
+    .part1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main1, .main2 {
+        margin: 10px 0;
+    }
+
+    /* Image principale */
+    .main3 img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* À propos */
+    .content_sector2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texte_content {
+        margin-bottom: 20px;
+    }
+
+    .image_page2 img {
+        width: 80%;
+    }
+
+    /* Projets */
+    .projet_part {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box1, .box2, .box3 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Compétences */
+    .blocCompetence {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Formulaire */
+    .form {
+        flex-direction: column;
+    }
+
+    .test1 {
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    /* Footer */
+    .pied {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Pour les mobiles uniquement */
+@media screen and (max-width: 480px) {
+    .nom_complet p {
+        font-size: 12px;
+    }
+
+    .lovitz {
+        font-size: 18px;
+    }
+
+    /* Bouton principal */
+    #main2a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Projets */
+    .projet_part div {
+        width: 100%;
+    }
+
+    /* Bouton Voir */
+    .box1 button, .box2 button, .box3 button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Formulaire */
+    .form input, textarea {
+        width: 100%;
+    }
+}
+
+
+

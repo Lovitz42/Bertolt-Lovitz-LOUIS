@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur prêt hypothécaire</title>
+</head>
+<body>
+    <form action="">
+        <label for="montantpret">Montant du prêt: </label>
+        <input type="number" name="montantpret" id="montantpret" placeholder="Montant du prêt">
+        
+        <label for="tauxinteret">Taux d'intérêt annuel: </label>
+        <input type="number" id="tauxinteret" name="tauxinteret" placeholder="Taux d'intérêt annuel">
+        
+        <label for="duree">Durée en années: </label>
+        <input type="number" id="duree" name="duree" placeholder="Durée en année">
+
+        <button onclick="paymentmonthly()" type="button">Paiement mensuel</button>
+        <p id="resultat"></p>
+
+        <script>
+            function paymentmonthly(){
+                const P_input = parseFloat(document.getElementById("montantpret").value);
+                const r_input = parseFloat(document.getElementById("tauxinteret").value);
+                let r = (r_input/100)/12;
+                const n_input = parseInt(document.getElementById("duree").value);
+                let n = n_input*12;
+                let sumR = 1+r;
+                let prt = Math.pow(sumR,n); 
+                let numerator = r*prt;
+                let denominator = prt-1;
+                let fraction = numerator/denominator;
+                let M = P_input*fraction;
+                if(P_input>=0 && r_input>=0 && n_input>=0){
+                    document.getElementById("resultat").textContent="Le montant du paiment mensuel est: "+M;
+                }else{
+                    document.getElementById("resultat").textContent="Veuillez entrer un nombre positif";
+                } 
+            }
+        </script>
+    </form>
+</body>
+</html>

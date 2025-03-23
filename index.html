@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Bertolt Lovitz LOUIS, ingénieur-agronome et développeur web en devenir. Découvrez mes projets et compétences.">
+    <meta name="keywords" content="Développeur web, HTML, CSS, JavaScript, Agronomie, Projets">
+    <meta name="author" content="Bertolt Lovitz LOUIS">
+    <title>Bertolt Lovitz LOUIS | Portfolio</title>
+    <link rel="icon" type="image/png" href="Lovitz_logo-Photoroom.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="entete">
+        <!--Espace Logo-->
+        
+        <div class="nom_complet"><p>LOUIS <span class="lovitz">BERTOLT LOVITZ</span></p></div>
+        <!--Espace Navigation-->
+        
+        <div id="menu_navigation">
+            <nav class="navigation">
+                <ul class="liste_nav">
+                    <li class="li0"><a href="#sector_id">Accueil</a></li>
+                    <!--rappel de faire le meme changement pour les autres items (page)-->
+                    <li class="li1"><a href="#a_propos_id">A propos</a></li>
+                    <li class="li2"><a href="#competence_id">Compétences</a></li>
+                    <li class="li3"><a href="#projet_id">Projets</a></li>
+                    <li class="li4"><a href="#formulaire_id">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Fin header-->
+    <!--Commencement Main-->
+    <section class="sector1" id="sector_id">
+        <div class="part1">
+            <div class="part1a">
+                <div class="main1"><p>Je suis ingénieur-Agronome et un Développeur en devenir.<br>Je suis passionné par le numérique plus précisément le web développement<br>dans lequel je me donne à fond.</p></div>
+                <div class="main2"><button id="main2a" type="button" onclick="window.location.href='#projet_id';"><strong>Voir mes projets</strong></button></div>
+            </div>
+            <div class="part1b">
+                <div class="main3"><img src="programmingphoto.svg" alt="photo du charbon du mais"></div>
+            </div>
+        </div>
+    </section>
+    <!--Partie a mettre le contenu sur le projet-->
+    <section id="a_propos_id">
+        <div class="sector2">
+            <div class="titresector2"><p>À propos</p></div>
+            <div class="content_sector2">
+                <div class="texte_content">
+                    <div id="spacetext">
+                        <div class="content1sector2"><p>Je suis Bertolt Lovitz LOUIS, passionné par la création de sites web modernes et intéractifs.</p></div>
+                        <div class="content2sector2"><p>Je suis actuellement étudiant en <span>développement web</span> et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.</p></div>
+                        <div class="content3sector2"><p>J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p></div>
+                    </div>
+                <div class="content4sector2"><button class="bouttoncv" type="button" onclick="window.location.href='Resume Gnl (1).pdf';">Télécharger mon CV</button></div>
+                </div>
+                <div class="image_page2"><img src="image2.svg" alt="image d'un homme travaillant sur la productivité du web developpement"></div>
+            </div>
+        </div>
+    </section>
+    <!--Espace de Projet-->
+    <section id="projet_id">
+        <div class="MyProject"><p>Mes Projets</p></div>
+        <div class="projet_part">
+            <div class="box1" id="box1">
+                <div id="box1a"><p>Projet de recherche sur six variétés<br>de maïs incluant une variété sucrée importée</p></div>
+                <div id="box1b"><p>#excel, #logiciel R, #Office</p></div>
+                <div><button type="button" onclick="window.location.href='Performance maïs.pdf'"><strong>Voir</strong></button></div>
+            </div>
+            <script>
+                const boite =document.getElementById("box1");
+                boite.addEventListener("mouseover", ()=>{
+                    boite.style.transform="scale(1.1)";
+                });
+                boite.addEventListener("mouseout",()=>{
+                    boite.style.transform="scale(1)";
+                });
+            </script>
+            <div class="box2" id="box2">
+                <div id="box2a"><p>Un calculateur intéractif en JavaScript<br>qui calcule le paiement hypothécaire.</p></div>
+                <div id="box2b"><p>#html, #css, #js</p></div>
+                <div><button type="button" onclick="window.location.href='calculateur.html'"><strong>Voir</strong></button></div>
+            </div>
+            <script>
+                const boite2 =document.getElementById("box2");
+                boite2.addEventListener("mouseover", ()=>{
+                    boite2.style.transform="scale(1.1)";
+                });
+                boite2.addEventListener("mouseout",()=>{
+                    boite2.style.transform="scale(1)";
+                });
+            </script>
+            <div class="box3" id="box3">
+                <div id="box3a"><p>Un mini-jeu interactif en JavaScript<br>qui utilise des événements DOM.</p></div>
+                <div id="box3b"><p>#html, #css, #js</p></div>
+                <div><button type="button" onclick="alert('Projet bientôt disponible !')"><strong>Voir</strong></button></div>
+            </div>
+            <script>
+                const boite3 =document.getElementById("box3");
+                boite3.addEventListener("mouseover", ()=>{
+                    boite3.style.transform="scale(1.1)";
+                });
+                boite3.addEventListener("mouseout",()=>{
+                    boite3.style.transform="scale(1)";
+                });
+            </script>
+        </div>
+    </section>
+    <!--Espace de Compétence-->
+    <section id="competence_id">
+        <div>
+            <div id="title_competence"><p>Mes Compétences</p></div>
+            <div class="blocCompetence">
+                <div class="blocSoftSkills" id="boite4">
+                    <div id="blocSoftSkills">
+                        <div class="soft_skills"><p>Soft skills</p></div>
+                        <div><p>Gestion de projet</p></div>
+                        <div class="progressGP"><div id="progressGP_id"></div></div>
+                        <div><p>Résolution de problème</p></div>
+                        <div class="progressRP"><div id="progressRP_id"></div></div>
+                        <div><p>Adaptabilité</p></div>
+                        <div class="progressA"><div id="progressA_id"></div></div>
+                    </div>
+                </div>
+                <script>
+                    const boite4 =document.getElementById("boite4");
+                    boite4.addEventListener("mouseover", ()=>{
+                        boite4.style.transform="scale(1.1)";
+                    });
+                    boite4.addEventListener("mouseout",()=>{
+                        boite4.style.transform="scale(1)";
+                    });
+                </script>
+                <div class="blocHardSkills" id="boite5">
+                    <div id="blocHardSkills">
+                        <div class="hard_skills"><p>Hard skills</p></div>
+                        <div><p>HTML</p></div>
+                        <div class="progressHTML"><div id="progressHTML_id"></div></div>
+                        <div><p>CSS</p></div>
+                        <div class="progressCSS"><div id="progressCSS_id"></div></div>
+                        <div><p>Javascript</p></div>
+                        <div class="progressJava"><div id="progressJava_id"></div></div>
+                        <div><p>VS Code</p></div>
+                        <div class="progressVS"><div id="progressVS_id"></div></div>
+                    </div>
+                </div>
+                <script>
+                    const boite5 =document.getElementById("boite5");
+                    boite5.addEventListener("mouseover", ()=>{
+                        boite5.style.transform="scale(1.1)";
+                    });
+                    boite5.addEventListener("mouseout",()=>{
+                        boite5.style.transform="scale(1)";
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <!--formulaire de demande de service-->
+    <section id="formulaire_id">
+        <div class="formulaire_class">
+            <div class="contact"><p><strong>Vous avez un <span class="grasColor">projet en tête ?</span></strong><strong class="br"><br>N'hésiter pas à me <span class="grasColor2">contacter</span></strong></p></div>
+            
+                <div class="form">
+                    <div>
+                        <div><label for="firstname">Votre prénom</label></div>
+                        <div><input type="text" name="firstname" id="firstname" placeholder="John" required></div>
+                    </div>
+                    <div>
+                        <div><label for="lastname">Votre nom</label></div>
+                        <div><input type="text" name="lastname" id="lastname" placeholder="PIERRE" required></div>
+                    </div>
+                </div>
+                <div class="test1">
+                    
+                <div><div><label for="subject" class="subject1">Votre sujet</label></div><div><input type="text" name="subject" id="subject" placeholder="Développement d'un site web" required></div></div>
+                    
+            
+            
+                    <div class="descript1">
+                        <label for="descript"></label>
+                        <textarea name="commentaire" id="descript" placeholder="Veuillez décrire votre demande ici" required></textarea>
+                    </div>
+                </div>
+            
+                    <div class="soumission">
+                        <div><button type="submit" onclick="Submitform()"><strong>Envoyer</strong></button></div>
+                    <div>
+                    <script>
+                        function Submitform(){
+                            const prenom = document.getElementById("firstname").value;
+                            const nom = document.getElementById("lastname").value;
+                            const sujet = document.getElementById("subject").value;
+                            const commentaire = document.getElementById("descript").value;
+                            if(prenom && nom && sujet && commentaire){
+                                alert("Merci" + " " +prenom +" "+nom+","+ " "+"Votre message a été envoyé avec succès !");
+                            } else{
+                                alert("Veuillez donner toutes les informations demandées SVP.")
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="pied">
+            <div><p>Designed by <strong>Bertolt Lovitz</strong> with HTML - CSS - JS</p></div>
+            <div><p>Tous droits réservés - 2025</p></div>
+        </div>
+    </footer>
+</body>
+</html>
