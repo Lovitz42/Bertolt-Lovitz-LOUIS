@@ -178,7 +178,9 @@ textarea{border-radius: 6px; height: 150px; width: 26%;}
 .pied{display: flex; gap: 900px; font-size: smaller; height: 35px auto; margin: 15px auto; justify-content: center;}
 .pied strong{color: rgb(2, 134, 37);}
 
-
+#successMessage{
+    display:none; color: green; font-weight: bold; margin-top: 20px;
+}
 
 button{
     background-color: aqua;
