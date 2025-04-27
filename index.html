@@ -189,22 +189,47 @@
                     <div class="soumission">
                         <div><button type="submit" onclick="Submitform()"><strong>Envoyer</strong></button></div>
                     <div>
-                    <script>
-                        function Submitform(){
-                            const prenom = document.getElementById("firstname").value;
-                            const nom = document.getElementById("lastname").value;
-                            const sujet = document.getElementById("subject").value;
-                            const commentaire = document.getElementById("descript").value;
-                            if(prenom && nom && sujet && commentaire){
-                                alert("Merci" + " " +prenom +" "+nom+","+ " "+"Votre message a été envoyé avec succès !");
-                            } else{
-                                alert("Veuillez donner toutes les informations demandées SVP.")
-                            }
-                        }
-                    </script>
+
                 </div>
             </div>
+        <!-- Message de succès caché au départ -->
+<div id="successMessage" style="display:none; color: green; font-weight: bold; margin-top: 20px;">
+  Merci beaucoup ! Votre message a bien été envoyé. 😊
+</div>
+        
             </form>
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById('contactForm');
+  const successMessage = document.getElementById('successMessage');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault(); // empêcher l'envoi normal (chargement de page)
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        form.reset(); // réinitialiser le formulaire
+        successMessage.style.display = 'block'; // montrer le message
+      } else {
+        alert("Erreur lors de l'envoi du formulaire. Merci de réessayer.");
+      }
+    } catch (error) {
+      alert("Erreur réseau. Merci de vérifier votre connexion.");
+    }
+  });
+});
+</script>
+
         </div>
     </section>
 
